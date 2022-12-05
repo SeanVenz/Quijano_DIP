@@ -1,0 +1,9 @@
+C:\Users\quija\OneDrive\Desktop\3rd Year\First sem\3rd Year First Sem Second Cluster\Intelligent Systems\IS1F1DIP\IS1F1DIP\bin\Debug\IS1F1DIP.exe
+C:\Users\quija\OneDrive\Desktop\3rd Year\First sem\3rd Year First Sem Second Cluster\Intelligent Systems\IS1F1DIP\IS1F1DIP\bin\Debug\IS1F1DIP.pdb
+C:\Users\quija\OneDrive\Desktop\3rd Year\First sem\3rd Year First Sem Second Cluster\Intelligent Systems\IS1F1DIP\IS1F1DIP\obj\Debug\IS1F1DIP.csproj.AssemblyReference.cache
+C:\Users\quija\OneDrive\Desktop\3rd Year\First sem\3rd Year First Sem Second Cluster\Intelligent Systems\IS1F1DIP\IS1F1DIP\obj\Debug\IS1F1DIP.Form1.resources
+C:\Users\quija\OneDrive\Desktop\3rd Year\First sem\3rd Year First Sem Second Cluster\Intelligent Systems\IS1F1DIP\IS1F1DIP\obj\Debug\IS1F1DIP.Properties.Resources.resources
+C:\Users\quija\OneDrive\Desktop\3rd Year\First sem\3rd Year First Sem Second Cluster\Intelligent Systems\IS1F1DIP\IS1F1DIP\obj\Debug\IS1F1DIP.csproj.GenerateResource.cache
+C:\Users\quija\OneDrive\Desktop\3rd Year\First sem\3rd Year First Sem Second Cluster\Intelligent Systems\IS1F1DIP\IS1F1DIP\obj\Debug\IS1F1DIP.csproj.CoreCompileInputs.cache
+C:\Users\quija\OneDrive\Desktop\3rd Year\First sem\3rd Year First Sem Second Cluster\Intelligent Systems\IS1F1DIP\IS1F1DIP\obj\Debug\IS1F1DIP.exe
+C:\Users\quija\OneDrive\Desktop\3rd Year\First sem\3rd Year First Sem Second Cluster\Intelligent Systems\IS1F1DIP\IS1F1DIP\obj\Debug\IS1F1DIP.pdb
