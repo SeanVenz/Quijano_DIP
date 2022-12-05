@@ -14,7 +14,8 @@ namespace IS1F1DIP
     public partial class Form1 : Form
     {
         Bitmap loaded, processed;
-
+        Bitmap imageB, imageA, colorgreen;
+        
         public Form1()
         {
             InitializeComponent();
@@ -50,8 +51,10 @@ namespace IS1F1DIP
         //Saving the processed image
         private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
-            pictureBox2.Image.Save(saveFileDialog1.FileName);
-
+            if(pictureBox3 == null)
+                pictureBox2.Image.Save(saveFileDialog1.FileName);
+            else
+                pictureBox3.Image.Save(saveFileDialog1.FileName);
         }
 
         //Opening the image and setting it up to 1st picture box
@@ -159,6 +162,52 @@ namespace IS1F1DIP
 
             pictureBox2.Image = histogramImage;
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            openFileDialog2.ShowDialog();
+            imageB = new Bitmap(openFileDialog2.FileName);
+            pictureBox1.Image = imageB;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            openFileDialog3.ShowDialog();
+            imageA = new Bitmap(openFileDialog3.FileName);
+            pictureBox2.Image = imageA;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Bitmap resultImage = new Bitmap(imageA.Width, imageA.Height);
+
+            Color mygreen = Color.FromArgb(51, 255, 5);
+            int greygreen = (mygreen.R + mygreen.G + mygreen.B) / 3;
+            int threshold = 5;
+
+            for (int x = 0; x < imageB.Width; x++)
+            {
+                for (int y = 0; y < imageB.Height; y++)
+                {
+                    Color pixel = imageB.GetPixel(x, y);
+                    Color backpixel = imageA.GetPixel(x, y);
+                    int grey = (pixel.R + pixel.G + pixel.B) / 3;
+                    int subtractValue = Math.Abs(grey - greygreen);
+                    if (subtractValue < threshold)
+                        resultImage.SetPixel(x, y, backpixel);
+                    else
+                        resultImage.SetPixel(x, y, pixel);
+                }
+            }
+            pictureBox3.Image = resultImage;
+        }
+
+        private void clearToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image = null;
+            pictureBox2.Image = null;
+            pictureBox3.Image = null;
         }
 
         private void Form1_Load(object sender, EventArgs e)
