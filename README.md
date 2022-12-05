@@ -1,4 +1,4 @@
-# Quijano_DIP
+# <center>Quijano_DIP Assignment</center>
 
 😁All of the processed images are in the `Saved Images` Folder under Quijano_DIP Folder :D
 
