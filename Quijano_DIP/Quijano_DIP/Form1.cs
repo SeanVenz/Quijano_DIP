@@ -166,6 +166,22 @@ namespace IS1F1DIP
 
         }
 
+        private void verticalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //vertical mirroring
+            processed = new Bitmap(loaded);
+
+            for (int i = 0; i < loaded.Width; i++)
+            {
+                for (int j = 0; j < loaded.Height; j++)
+                {
+                    Color pixel = loaded.GetPixel(i, j);
+                    processed.SetPixel(i, (loaded.Height - 1) - j, pixel);
+                }
+            }
+            pictureBox2.Image = processed;
+        }
+
         //Process Image to Sepia
         private void sepiaToolStripMenuItem_Click(object sender, EventArgs e)
         {

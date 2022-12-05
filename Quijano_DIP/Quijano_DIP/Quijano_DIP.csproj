@@ -80,6 +80,7 @@
     <Content Include="Saved Images\Grey Scaling.jpg" />
     <Content Include="Saved Images\Histogram.jpg" />
     <Content Include="Saved Images\Mirror Horizontal Invert.jpg" />
+    <Content Include="Saved Images\Mirror Vertical Invert.jpg" />
     <Content Include="Saved Images\Sepia.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
